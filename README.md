@@ -6,9 +6,7 @@
 C# VOR/DME LASM (VHF Omni-directional Radio Range)/(Distance Measuring Equipment) Laboratory Stand Model Application.
 
 ## Supported operating systems
-Library runs on both Linux and Windows:
-* Linux:
-  - Ubuntu 22.04 :white_check_mark:
+Application runs on Windows:
 * Windows:
   - 7 :white_check_mark:
   - 8 :white_check_mark:
@@ -20,7 +18,7 @@ Library runs on both Linux and Windows:
 Source code is compatible with Unity 2020.2 (C# 8) and newer versions.
 
 Check releases page for windows builds.
-On GNU/Linux build application by yourself.
+On GNU/Linux and Mac OS build application by yourself.
 
 ## Screenshots
 ![Screenshot](https://github.com/fl1ckje/VOR-DME-LSMA/blob/master/Docs/Media/Screenshot.png)

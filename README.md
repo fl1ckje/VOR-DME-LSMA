@@ -17,6 +17,8 @@ Library runs on both Linux and Windows:
   - 11 :white_check_mark:
 
 ## Build and run quick-guide
+Source code is compatible with Unity 2020.2 (C# 8) and newer versions.
+
 Check releases page for windows builds.
 On GNU/Linux build application by yourself.
 

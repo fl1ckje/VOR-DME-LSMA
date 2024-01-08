@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Discord](https://img.shields.io/badge/chat-on_discord-%237289DA.svg)
 
-VOR/DME LASM (VHF Omni-directional Radio Range)/(Distance Measuring Equipment) Laboratory Stand Model Application.
+C# VOR/DME LASM (VHF Omni-directional Radio Range)/(Distance Measuring Equipment) Laboratory Stand Model Application.
 
 ## Supported operating systems
 Library runs on both Linux and Windows:

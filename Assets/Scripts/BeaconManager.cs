@@ -21,9 +21,9 @@ public class BeaconManager : MonoBehaviour
         new(52.05368214721413f, 113.46639143197622f, "Чита", BeaconType.VORDME, BeaconImpl.DEFAULT),
         new(56.29262613720093f, 101.71032953908764f, "Братск", BeaconType.VORDME, BeaconImpl.DEFAULT),
 
-        new(53.39154577756098f, 109.00635888385294f, "Усть-Баргузин", BeaconType.DME, BeaconImpl.DEFAULT),
-        new(52.51695723137947f, 111.53375523122716f, "Сосново-Озерское", BeaconType.DME, BeaconImpl.CUSTOM),
-        new(55.78296050231323f, 109.54890162529887f, "Нижнеангарск", BeaconType.DME, BeaconImpl.CUSTOM)
+        // new(53.39154577756098f, 109.00635888385294f, "Усть-Баргузин", BeaconType.DME, BeaconImpl.DEFAULT),
+        // new(52.51695723137947f, 111.53375523122716f, "Сосново-Озерское", BeaconType.DME, BeaconImpl.CUSTOM),
+        // new(55.78296050231323f, 109.54890162529887f, "Нижнеангарск", BeaconType.DME, BeaconImpl.CUSTOM)
     };
 
     public void Initialize()
@@ -45,7 +45,7 @@ public class BeaconManager : MonoBehaviour
     {
         for (int i = 0; i < beacons.Count; i++)
         {
-            Vector2 position = MapUtils.Instance.LatLongToXY(beacons[i].Lat, beacons[i].Lng);
+            Vector2 position = MapHelper.Instance.LatLongToXY(beacons[i].Lat, beacons[i].Lng);
 
             GameObject instance = Instantiate(beacons[i].impl switch
             {

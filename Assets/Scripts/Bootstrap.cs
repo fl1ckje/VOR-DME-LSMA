@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bootstrap : MonoBehaviour
 {
     public static Bootstrap Instance;
-    private MapUtils mapUtils;
+    private MapHelper mapUtils;
 
     [Header("Editor-linked references")]
     public RectTransform map;
@@ -26,7 +26,7 @@ public class Bootstrap : MonoBehaviour
     {
         Instance = this;
 
-        mapUtils = new MapUtils();
+        mapUtils = new MapHelper();
         mapUtils.Initialize();
 
         wayDrawer.Initialize();

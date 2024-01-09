@@ -15,8 +15,8 @@ public class Beacon
         get => lat;
         set
         {
-            if (value > MapUtils.RIGHT_BOTTOM_LAT &&
-                value < MapUtils.LEFT_TOP_LAT)
+            if (value > MapHelper.RIGHT_BOTTOM_LAT &&
+                value < MapHelper.LEFT_TOP_LAT)
             {
                 lat = value;
             }
@@ -28,8 +28,8 @@ public class Beacon
         get => lng;
         set
         {
-            if (value > MapUtils.LEFT_TOP_LONG &&
-                value < MapUtils.RIGHT_BOTTOM_LONG)
+            if (value > MapHelper.LEFT_TOP_LONG &&
+                value < MapHelper.RIGHT_BOTTOM_LONG)
             {
                 lng = value;
             }

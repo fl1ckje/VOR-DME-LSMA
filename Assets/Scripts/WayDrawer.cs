@@ -28,7 +28,7 @@ public class WayDrawer : MonoBehaviour
         mapTransform = Bootstrap.Instance.map;
         mapTransform.GetWorldCorners(mapBounds);
 
-        mouseAnchoredOffset = new(MapUtils.Instance.MapSize.x / 2f, -MapUtils.Instance.MapSize.y / 2f);
+        mouseAnchoredOffset = new(MapHelper.Instance.MapSize.x / 2f, -MapHelper.Instance.MapSize.y / 2f);
     }
 
     public void OnMousePositionChange()
@@ -36,7 +36,7 @@ public class WayDrawer : MonoBehaviour
         mouseAnchoredPos = Bootstrap.Instance.map.InverseTransformPoint(mouseWorldPos);
         mouseAnchoredPos += mouseAnchoredOffset;
 
-        MousePositionChangedEvent?.Invoke(MapUtils.Instance.XYToLatLong(mouseAnchoredPos));
+        MousePositionChangedEvent?.Invoke(MapHelper.Instance.XYToLatLong(mouseAnchoredPos));
     }
 
     private void Update()

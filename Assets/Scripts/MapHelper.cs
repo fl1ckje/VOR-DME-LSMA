@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class MapUtils
+public class MapHelper
 {
-    public static MapUtils Instance;
+    public static MapHelper Instance;
     public const float LEFT_TOP_LAT = 58.237404433709145f;
     public const float LEFT_TOP_LONG = 92.4907995336642f;
     public const float RIGHT_BOTTOM_LAT = 50.39817431586244f;

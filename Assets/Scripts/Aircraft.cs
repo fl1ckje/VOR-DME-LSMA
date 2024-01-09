@@ -24,7 +24,7 @@ public class Aircraft : MonoBehaviour
 
     public void OnPositionChange()
     {
-        PositionChangedEvent?.Invoke(MapUtils.Instance.XYToLatLong(rectTransform.anchoredPosition));
+        PositionChangedEvent?.Invoke(MapHelper.Instance.XYToLatLong(rectTransform.anchoredPosition));
     }
 
     private void Update()
@@ -49,16 +49,16 @@ public class Aircraft : MonoBehaviour
 
     public void SetPosition(float lat, float lng)
     {
-        lng = Mathf.Clamp(lng, MapUtils.LEFT_TOP_LONG, MapUtils.RIGHT_BOTTOM_LONG);
-        lat = Mathf.Clamp(lat, MapUtils.RIGHT_BOTTOM_LAT, MapUtils.LEFT_TOP_LAT);
+        lng = Mathf.Clamp(lng, MapHelper.LEFT_TOP_LONG, MapHelper.RIGHT_BOTTOM_LONG);
+        lat = Mathf.Clamp(lat, MapHelper.RIGHT_BOTTOM_LAT, MapHelper.LEFT_TOP_LAT);
 
-        rectTransform.anchoredPosition = MapUtils.Instance.LatLongToXY(lat, lng);
+        rectTransform.anchoredPosition = MapHelper.Instance.LatLongToXY(lat, lng);
     }
 
     public void SetPosition(Vector2 pixel)
     {
-        pixel.x = Mathf.Clamp(pixel.x, 0, MapUtils.Instance.MapSize.x);
-        pixel.y = Mathf.Clamp(pixel.y, 0, -MapUtils.Instance.MapSize.y);
+        pixel.x = Mathf.Clamp(pixel.x, 0, MapHelper.Instance.MapSize.x);
+        pixel.y = Mathf.Clamp(pixel.y, 0, -MapHelper.Instance.MapSize.y);
 
         rectTransform.anchoredPosition = pixel;
     }

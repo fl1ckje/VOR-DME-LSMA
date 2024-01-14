@@ -8,9 +8,6 @@ C# VOR/DME LASM (VHF Omni-directional Radio Range)/(Distance Measuring Equipment
 ## Supported operating systems
 Application runs on Windows:
 * Windows:
-  - 7 :white_check_mark:
-  - 8 :white_check_mark:
-  - 8.1 :white_check_mark:
   - 10 :white_check_mark:
   - 11 :white_check_mark:
 

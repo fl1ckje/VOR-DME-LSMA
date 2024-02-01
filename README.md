@@ -1,7 +1,7 @@
 # VOR-DME-LSMA
 ![Maintenance](https://img.shields.io/badge/maintenance-stable-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Discord](https://img.shields.io/badge/chat-on_discord-%237289DA.svg)
+[![Discord](https://img.shields.io/badge/chat-on_discord-%237289DA.svg)](https://discordapp.com/users/346979343995633664)
 
 C# VOR/DME LASM (VHF Omni-directional Radio Range)/(Distance Measuring Equipment) Laboratory Stand Model Application.
 

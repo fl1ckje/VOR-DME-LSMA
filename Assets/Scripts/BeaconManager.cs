@@ -14,7 +14,7 @@ public class BeaconManager : MonoBehaviour
     [SerializeField]
     private GameObject customBeaconPrefab;
 
-    public List<Beacon> beacons = new()
+    public List<Beacon> beacons = new() // HARDCODED STUFF, CUSTOMER WANTED THIS
     {
         new(52.283920052645854f, 104.28749346364783f, "Иркутск", BeaconType.VORDME, BeaconImpl.DEFAULT),
         new(51.83649802605531f, 107.58217090901114f, "Улан-Удэ", BeaconType.VORDME, BeaconImpl.DEFAULT),
